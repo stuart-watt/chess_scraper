@@ -11,3 +11,4 @@ dependencies:
     - requests==2.26.0
     - dacite==1.6.0
     - click==8.0.3
+    - datetime==4.3.*
