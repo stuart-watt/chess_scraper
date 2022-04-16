@@ -56,9 +56,11 @@ class GameProcessor():
                 start_time = None
 
             try:
-                duration = row["end_time"] - row["start_time"]
+                end_time = datetime.fromtimestamp(row["end_time"])
             except:
-                duration = datetime.fromtimestamp(row["start_time"])
+                end_time = None
+
+            timestamp = start_time or end_time
 
             game_data = self.get_opponent(row["white"], row["black"])
             result, info = self.get_result(game_data["result"], game_data["info"])
@@ -68,8 +70,7 @@ class GameProcessor():
                 "rated": row["rated"],
                 "time_class": row["time_class"],
                 "time_control": row["time_control"],
-                "start_time": start_time,
-                "game_time": duration,
+                "timestamp": timestamp,
                 "played": game_data["played"],
                 "rating": game_data["rating"],
                 "opponent": game_data["opponent"],
