@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 import json
-from .client import ChessClient
+from chess import ChessClient
 
 client = ChessClient()
 
