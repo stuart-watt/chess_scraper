@@ -14,4 +14,4 @@ def get_data(username: str, file: str):
 
     client = ChessClient()
 
-    client.get_archive_data(username).to_json(file, orient="records")
+    data = client.get_archive_data(username, file)
