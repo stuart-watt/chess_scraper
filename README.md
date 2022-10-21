@@ -5,7 +5,7 @@ A scraper to pull data from chess.com and run some analysis.
 
 1. Install make
 
-run `sudo apt-get install build-essential` in the terminal. This will install uild-essential and allow you to run commands defined in the Makefile.
+run `sudo apt-get install build-essential` in the terminal. This will install build-essential and allow you to run commands defined in the Makefile.
 
 2. Install miniconda int your home directory
 
