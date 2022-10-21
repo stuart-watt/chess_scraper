@@ -8,13 +8,13 @@ DESCRIPTION = 'Chess.com scraper'
 
 # Setting up
 setup(
-        name="chess", 
-        version=VERSION,
-        author="Stuart Watt",
-        description=DESCRIPTION,
-        packages=find_packages(),
-        python_requires=">=3.6",
-        install_requires=requires,
-        include_package_data=True,
-        entry_points={"console_scripts": ["chess=scraper.cli:cli"]},
+    name="chess", 
+    version=VERSION,
+    author="Stuart Watt",
+    description=DESCRIPTION,
+    packages=find_packages(),
+    python_requires=">=3.6",
+    install_requires=requires,
+    include_package_data=True,
+    entry_points={"console_scripts": ["chess=scraper.cli:cli"]},
 )

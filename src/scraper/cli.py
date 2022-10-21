@@ -8,10 +8,10 @@ def cli():
     pass
 
 @cli.command()
-@click.option("--username", required=True, help="Chess.com username")
-@click.option("--file", type=click.Path(), required=True, help="File to dump results")
+@click.option("-u", "--username", required=True, help="Chess.com username")
+@click.option("-f", "--file", type=click.Path(), required=True, help="File to dump results (json extension)")
 def get_data(username: str, file: str):
 
     client = ChessClient()
 
-    client.get_archive_data(username).to_json(file, orient="records")
+    data = client.get_archive_data(username, file)
