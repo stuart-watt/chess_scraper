@@ -1,4 +1,8 @@
+import pandas as pd
+
 import pytest
+from pytest_regressions.data_regression import DataRegressionFixture
+
 from scraper.client import ChessClient
 
 
@@ -17,8 +21,17 @@ def test_client_finds_archives(client: ChessClient):
     archives = client.list_archives()
 
     assert isinstance(archives, list)
+    assert isinstance(archives[0], str)
     assert len(archives) > 0
 
 
-# def test_client_pulls_archive(client, ChessClient):
-#     archives = client.list_archives()
+def test_client_pulls_archive(client: ChessClient, data_regression: DataRegressionFixture):
+
+    archives = client.list_archives()
+    data = client.get_archive(archives[0])
+
+    assert isinstance(data, list)
+    assert len(data) > 0
+
+    data_regression.check(data)
+

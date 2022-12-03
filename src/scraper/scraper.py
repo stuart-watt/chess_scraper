@@ -24,6 +24,8 @@ def get_data(username: str, file: str):
     client = ChessClient(username)
     data = client.get_archive_data()
 
+    data.sample(10).to_json("src/tests/data/test.json", orient="records")
+
     processor = GameProcessor(username)
     games = processor.clean_archive(data)
 

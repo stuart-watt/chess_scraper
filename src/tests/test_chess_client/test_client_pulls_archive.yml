@@ -1,0 +1,289 @@
+- black:
+    '@id': https://api.chess.com/pub/player/radioactiverabbit
+    rating: 904
+    result: resigned
+    username: RadioActiveRabbit
+    uuid: 0ba26fea-0c41-11e5-8002-000000000000
+  end_time: 1440670512
+  fen: r1b1k3/ppp2r2/6B1/3pp3/1n4pP/bPB5/P1PPNP2/R4RK1 b - - 2 20
+  initial_setup: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+  pgn: '[Event "Let''s Play!"]
+
+    [Site "Chess.com"]
+
+    [Date "2015.08.27"]
+
+    [Round "-"]
+
+    [White "Samwise_Gambit"]
+
+    [Black "RadioActiveRabbit"]
+
+    [Result "1-0"]
+
+    [CurrentPosition "r1b1k3/ppp2r2/6B1/3pp3/1n4pP/bPB5/P1PPNP2/R4RK1 b - - 2 20"]
+
+    [Timezone "UTC"]
+
+    [ECO "C20"]
+
+    [ECOUrl "https://www.chess.com/openings/Kings-Pawn-Opening-1...e5-2.b3"]
+
+    [UTCDate "2015.08.27"]
+
+    [UTCTime "09:21:49"]
+
+    [WhiteElo "1296"]
+
+    [BlackElo "904"]
+
+    [TimeControl "1/259200"]
+
+    [Termination "Samwise_Gambit won by resignation"]
+
+    [StartTime "09:21:49"]
+
+    [EndDate "2015.08.27"]
+
+    [EndTime "10:15:12"]
+
+    [Link "https://www.chess.com/game/daily/117204770"]
+
+
+    1. e4 e5 2. b3 Nf6 3. Bb2 Nxe4 4. Nc3 Nxc3 5. Bxc3 f6 6. g4 Nc6 7. Qe2 Ba3 8.
+    Qc4 d6 9. Bg2 Qd7 10. Ne2 h5 11. h3 hxg4 12. h4 Rh5 13. Qg8+ Ke7 14. Qxg7+ Ke8
+    15. Qxf6 Rf5 16. Qg6+ Qf7 17. Qxf7+ Rxf7 18. O-O Nb4 19. Be4 d5 20. Bg6 1-0
+
+    '
+  rated: true
+  rules: chess
+  start_time: 1440667309
+  tcn: mC0Kjr!TcjTCbsCsjs1ToE5Qdm9qmAZRfo7Zgm3NpxNExF?NA!80!2082TNLTUZ1U1L1egQzoCRJCU
+  time_class: daily
+  time_control: 1/259200
+  url: https://www.chess.com/game/daily/117204770
+  uuid: 0b7fd6c8-4c9d-11e5-8302-00000001000b
+  white:
+    '@id': https://api.chess.com/pub/player/samwise_gambit
+    rating: 1296
+    result: win
+    username: Samwise_Gambit
+    uuid: 94e85f9a-4c82-11e5-8048-000000000000
+- black:
+    '@id': https://api.chess.com/pub/player/samwise_gambit
+    rating: 1391
+    result: win
+    username: Samwise_Gambit
+    uuid: 94e85f9a-4c82-11e5-8048-000000000000
+  end_time: 1440777735
+  fen: 6k1/1p2p3/3pP1p1/4n2r/pb4r1/1b5K/6PP/3R4 w - - 8 39
+  initial_setup: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+  pgn: '[Event "Let''s Play!"]
+
+    [Site "Chess.com"]
+
+    [Date "2015.08.28"]
+
+    [Round "-"]
+
+    [White "sam-marsh"]
+
+    [Black "Samwise_Gambit"]
+
+    [Result "0-1"]
+
+    [CurrentPosition "6k1/1p2p3/3pP1p1/4n2r/pb4r1/1b5K/6PP/3R4 w - - 8 39"]
+
+    [Timezone "UTC"]
+
+    [ECO "A48"]
+
+    [ECOUrl "https://www.chess.com/openings/Indian-Game-Knights-Variation-East-Indian-Defense"]
+
+    [UTCDate "2015.08.28"]
+
+    [UTCTime "14:14:05"]
+
+    [WhiteElo "1078"]
+
+    [BlackElo "1391"]
+
+    [TimeControl "1/86400"]
+
+    [Termination "Samwise_Gambit won by checkmate"]
+
+    [StartTime "14:14:05"]
+
+    [EndDate "2015.08.28"]
+
+    [EndTime "16:02:15"]
+
+    [Link "https://www.chess.com/game/daily/117271926"]
+
+
+    1. d4 g6 2. Nf3 Nf6 3. Nc3 Bg7 4. Bg5 O-O 5. Qd3 c6 6. O-O-O Qa5 7. b4 Qxb4 8.
+    Kd2 Nd5 9. a3 Qxa3 10. e4 Nb4 11. Qc4 h6 12. Qb3 Qxb3 13. cxb3 hxg5 14. Bc4 g4
+    15. Ng5 Bh6 16. Bxf7+ Rxf7 17. Ne2 Bxg5+ 18. f4 Bxf4+ 19. Kc3 Bd6 20. e5 Nd5+
+    21. Kc4 Ne3+ 22. Kd3 Nxd1 23. Rxd1 Bb4 24. Kc4 a5 25. d5 d6 26. dxc6 Be6+ 27.
+    Kd3 Nxc6 28. Ke3 Bxb3 29. Rb1 a4 30. e6 Rf5 31. Ng3 Re5+ 32. Kf2 Rf8+ 33. Nf5
+    Rfxf5+ 34. Kg3 Re3+ 35. Kxg4 Re4+ 36. Kg3 Ne5 37. Rd1 Rg4+ 38. Kh3 Rh5# 0-1
+
+    '
+  rated: true
+  rules: chess
+  start_time: 1440771245
+  tcn: lB2Ugv!Tbs92cM8!dtYQea7GjzGzclTJiqzqmCJztA3VArqrkrVMfAMEvM2VA191smVMnDMDlsDRCKzJsAJuAtudhdRztAWGBJZRJQ6SAt5QtuSrdbGyKS1LmwLKun49wL9LnwKuwEuCEwQKbdCEwxLN
+  time_class: daily
+  time_control: 1/86400
+  url: https://www.chess.com/game/daily/117271926
+  uuid: 0a2ed966-4d8f-11e5-839e-00000001000b
+  white:
+    '@id': https://api.chess.com/pub/player/sam-marsh
+    rating: 1078
+    result: checkmated
+    username: sam-marsh
+    uuid: 5d7a7428-425d-11e5-8000-000000000000
+- black:
+    '@id': https://api.chess.com/pub/player/samwise_gambit
+    rating: 1417
+    result: win
+    username: Samwise_Gambit
+    uuid: 94e85f9a-4c82-11e5-8048-000000000000
+  end_time: 1440828191
+  fen: 8/6pp/k7/5p2/1Pr2P2/7P/6P1/6K1 b - - 1 31
+  initial_setup: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+  pgn: '[Event "Let''s Play!"]
+
+    [Site "Chess.com"]
+
+    [Date "2015.08.27"]
+
+    [Round "-"]
+
+    [White "RadioActiveRabbit"]
+
+    [Black "Samwise_Gambit"]
+
+    [Result "0-1"]
+
+    [CurrentPosition "8/6pp/k7/5p2/1Pr2P2/7P/6P1/6K1 b - - 1 31"]
+
+    [Timezone "UTC"]
+
+    [ECO "B50"]
+
+    [ECOUrl "https://www.chess.com/openings/Sicilian-Defense-2.Nf3-d6-3.d4"]
+
+    [UTCDate "2015.08.27"]
+
+    [UTCTime "12:13:37"]
+
+    [WhiteElo "873"]
+
+    [BlackElo "1417"]
+
+    [TimeControl "1/86400"]
+
+    [Termination "Samwise_Gambit won by resignation"]
+
+    [StartTime "12:13:37"]
+
+    [EndDate "2015.08.29"]
+
+    [EndTime "06:03:11"]
+
+    [Link "https://www.chess.com/game/daily/117210408"]
+
+
+    1. e4 c5 2. Nf3 d6 3. d4 b6 4. Bb5+ Bd7 5. Bxd7+ Qxd7 6. d5 Nf6 7. Nc3 Qg4 8.
+    O-O Nbd7 9. Nb5 O-O-O 10. Nxa7+ Kb7 11. Nc6 Rc8 12. h3 Qxe4 13. Re1 Qxd5 14. Nxe7
+    Qxd1 15. Rxd1 Bxe7 16. Ng5 Ne5 17. f4 Ne4 18. Nxe4 Nc4 19. b3 f5 20. Nxd6+ Nxd6
+    21. a4 c4 22. Ba3 Rhd8 23. bxc4 Rxc4 24. a5 b5 25. Bxd6 Rxd6 26. a6+ Ka7 27. Rdb1
+    b4 28. c3 Rxa6 29. Rxa6+ Kxa6 30. Rxb4 Bxb4 31. cxb4 0-1
+
+    '
+  rated: true
+  rules: chess
+  start_time: 1440677617
+  tcn: mCYIgvZRlBXPfH6ZHZ7ZBJ!TbsZEeh5ZsH86HW6XWQ76pxECfeCJQ0Jded90vMZKnDTCMCKAjr1LCRARiyIAcq?7rA6AyGPHqR7RGOXWdbHzksROaOWObz0zsz
+  time_class: daily
+  time_control: 1/86400
+  url: https://www.chess.com/game/daily/117210408
+  uuid: 0b8bd104-4cb5-11e5-8198-00000001000b
+  white:
+    '@id': https://api.chess.com/pub/player/radioactiverabbit
+    rating: 873
+    result: resigned
+    username: RadioActiveRabbit
+    uuid: 0ba26fea-0c41-11e5-8002-000000000000
+- black:
+    '@id': https://api.chess.com/pub/player/radioactiverabbit
+    rating: 873
+    result: resigned
+    username: RadioActiveRabbit
+    uuid: 0ba26fea-0c41-11e5-8002-000000000000
+  end_time: 1440843486
+  fen: r3k1nr/1pp2N1p/p2p1p2/8/2BBP1b1/1P6/P1P3PP/1K5R b kq - 2 18
+  initial_setup: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+  pgn: '[Event "Let''s Play!"]
+
+    [Site "Chess.com"]
+
+    [Date "2015.08.29"]
+
+    [Round "-"]
+
+    [White "Samwise_Gambit"]
+
+    [Black "RadioActiveRabbit"]
+
+    [Result "1-0"]
+
+    [CurrentPosition "r3k1nr/1pp2N1p/p2p1p2/8/2BBP1b1/1P6/P1P3PP/1K5R b kq - 2 18"]
+
+    [Timezone "UTC"]
+
+    [ECO "C22"]
+
+    [ECOUrl "https://www.chess.com/openings/Center-Game-Accepted-Normal-Variation"]
+
+    [UTCDate "2015.08.29"]
+
+    [UTCTime "06:21:08"]
+
+    [WhiteElo "1417"]
+
+    [BlackElo "873"]
+
+    [TimeControl "1/86400"]
+
+    [Termination "Samwise_Gambit won by resignation"]
+
+    [StartTime "06:21:08"]
+
+    [EndDate "2015.08.29"]
+
+    [EndTime "10:18:06"]
+
+    [Link "https://www.chess.com/game/daily/117310578"]
+
+
+    1. e4 e5 2. d4 exd4 3. Qxd4 Nc6 4. Qc3 Bb4 5. b3 Bxc3+ 6. Nxc3 Qf6 7. Bb2 Nd4
+    8. O-O-O Qf4+ 9. Kb1 Qxf2 10. Rxd4 Qxd4 11. Nf3 Qf2 12. Nb5 Qb6 13. Bxg7 a6 14.
+    Nbd4 d6 15. Bc4 Bg4 16. Ng5 Qxd4 17. Bxd4 f6 18. Nf7 1-0
+
+    '
+  rated: false
+  rules: chess
+  start_time: 1440829268
+  tcn: mC0KlBKBdB5QBs9zjrzsbs7TcjQBecTDcbDndBnBgvBnsHnPj2WOHBZRfA6EvMPB2B1TM1
+  time_class: daily
+  time_control: 1/86400
+  url: https://www.chess.com/game/daily/117310578
+  uuid: 2296086c-4e16-11e5-8242-00000001000b
+  white:
+    '@id': https://api.chess.com/pub/player/samwise_gambit
+    rating: 1417
+    result: win
+    username: Samwise_Gambit
+    uuid: 94e85f9a-4c82-11e5-8048-000000000000

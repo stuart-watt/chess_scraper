@@ -1,4 +1,5 @@
 from uuid import uuid4
+import pathlib
 
 import pytest
 
@@ -25,3 +26,9 @@ def client(real_username: str) -> ChessClient:
 @pytest.fixture
 def proccesor(real_username: str) -> GameProcessor:
     return GameProcessor(real_username)
+
+
+@pytest.fixture
+def testdata() -> pathlib.Path:
+    return pathlib.Path(__file__).parent / "data/test.json"
+
