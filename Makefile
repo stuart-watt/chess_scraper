@@ -5,6 +5,12 @@
 export ALIAS = chess 		# must match name field in environment.yaml
 
 
+export $(cat .env)
+export TF_VAR_project_id = $(PROJECT_ID)
+export TF_VAR_region = $(PROJECT_REGION)
+
+export GOOGLE_APPLICATION_CREDENTIALS ?= ~/.gcp/gcp_credentials.json
+
 #############
 ## Install ##
 #############
@@ -18,7 +24,7 @@ conda:
 # || \ 						-> OR operation. If first line fails, run second line. If first line passes, stop.
 # conda env create			-> create conda environment
 # --file environment.yaml	-> from file called environment.yaml
-	conda env update -n $(ALIAS) --file environment.yaml --prune /
+	conda env update -n $(ALIAS) --file environment.yaml --prune \
 		|| \
 	conda env create --file environment.yaml
 
@@ -38,3 +44,8 @@ tests:
 
 format:
 	black .
+
+
+###############
+## Terraform ##
+###############
