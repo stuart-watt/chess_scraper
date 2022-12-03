@@ -3,7 +3,6 @@ import typing
 import pandas as pd
 
 
-
 class ChessClient:
     def __init__(self, username: str):
         self.check_user(username)
@@ -35,7 +34,7 @@ class ChessClient:
         return r.json()["games"]
 
     def get_archive_data(self) -> pd.DataFrame:
-        
+
         archives = self.list_archives()
 
         print("Ingesting...", end="")

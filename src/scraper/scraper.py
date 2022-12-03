@@ -4,6 +4,7 @@ import pandas as pd
 from scraper.client import ChessClient
 from scraper.utils import GameProcessor
 
+
 @click.group()
 def cli():
     pass

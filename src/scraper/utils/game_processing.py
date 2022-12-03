@@ -3,6 +3,7 @@ from datetime import datetime
 import chess.pgn
 import io
 
+
 class GameProcessor:
     def __init__(self, username):
         self.username = username
@@ -66,10 +67,9 @@ class GameProcessor:
             opening = pgn.headers["ECOUrl"].split("/")[-1]
         except KeyError as e:
             opening = None
-            
+
         return opening
 
-        
     def clean_archive(self, data: pd.DataFrame) -> pd.DataFrame:
         """Combine all cleaned data points and export as a DataFrame"""
 
@@ -106,7 +106,7 @@ class GameProcessor:
                     "opponent_rating": game_data["opponent_rating"],
                     "result": result,
                     "info": info,
-                    "opening": opening
+                    "opening": opening,
                 }
             )
 
