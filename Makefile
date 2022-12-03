@@ -22,9 +22,19 @@ conda:
 		|| \
 	conda env create --file environment.yaml
 
-##############
-## Packages ##
-##############
-
 packages:
 	pip install -e src/
+
+#############
+## Testing ##
+#############
+
+tests:
+	pytest src/tests/
+
+################
+## Formatting ##
+################
+
+format:
+	black .

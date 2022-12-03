@@ -1,38 +1,48 @@
 import pandas as pd
 from datetime import datetime
+import chess.pgn
+import io
 
-class GameProcessor():
-
+class GameProcessor:
     def __init__(self, username):
         self.username = username
 
     def get_opponent(self, white: dict, black: dict) -> dict:
-        
+        """Determines the stats of the opponent"""
+
         if white["username"].lower() == self.username:
             output = {
-                "played": "white", 
+                "played": "white",
                 "rating": white["rating"],
                 "opponent": black["username"],
                 "opponent_rating": black["rating"],
                 "result": white["result"],
-                "info": black["result"]
+                "info": black["result"],
             }
 
-        else: 
+        else:
             output = {
-                "played": "black", 
+                "played": "black",
                 "rating": black["rating"],
                 "opponent": white["username"],
                 "opponent_rating": white["rating"],
                 "result": black["result"],
-                "info": white["result"]
+                "info": white["result"],
             }
 
         return output
 
     def get_result(self, result: str, info: str) -> tuple:
+        """Standardises the different game results"""
 
-        draws = ['agreed', 'repetition', 'stalemate', '50move', 'insufficient', 'timevsinsufficient']
+        draws = [
+            "agreed",
+            "repetition",
+            "stalemate",
+            "50move",
+            "insufficient",
+            "timevsinsufficient",
+        ]
 
         if result == "win":
             return ("win", info)
@@ -43,11 +53,28 @@ class GameProcessor():
         if result == info:
             return ("draw", info)
 
+    def get_opening(self, pgn: str) -> str:
+        """Extracts the opening from the PGN
+        the opeinig is extracted from the ECOUrl, which has the form like:
+        "https://www.chess.com/openings/Vienna-Game-Zhuravlev-Countergambit"
 
-    def archive_cleaner(self, data: pd.DataFrame) -> pd.DataFrame:
+        In this case, the opeining "Vienna-Game-Zhuravlev-Countergambit"
+        """
+        pgn = chess.pgn.read_game(io.StringIO(pgn))
+
+        try:
+            opening = pgn.headers["ECOUrl"].split("/")[-1]
+        except KeyError as e:
+            opening = None
+            
+        return opening
+
+        
+    def clean_archive(self, data: pd.DataFrame) -> pd.DataFrame:
+        """Combine all cleaned data points and export as a DataFrame"""
 
         output = []
-        
+
         for _, row in data.iterrows():
 
             try:
@@ -64,19 +91,23 @@ class GameProcessor():
 
             game_data = self.get_opponent(row["white"], row["black"])
             result, info = self.get_result(game_data["result"], game_data["info"])
+            opening = self.get_opening(row["pgn"])
 
-            output.append({
-                "url": row["url"],
-                "rated": row["rated"],
-                "time_class": row["time_class"],
-                "time_control": row["time_control"],
-                "timestamp": timestamp,
-                "played": game_data["played"],
-                "rating": game_data["rating"],
-                "opponent": game_data["opponent"],
-                "opponent_rating": game_data["opponent_rating"],
-                "result": result,
-                "info": info
-            })
+            output.append(
+                {
+                    "url": row["url"],
+                    "rated": row["rated"],
+                    "time_class": row["time_class"],
+                    "time_control": row["time_control"],
+                    "timestamp": timestamp,
+                    "played": game_data["played"],
+                    "rating": game_data["rating"],
+                    "opponent": game_data["opponent"],
+                    "opponent_rating": game_data["opponent_rating"],
+                    "result": result,
+                    "info": info,
+                    "opening": opening
+                }
+            )
 
         return pd.DataFrame(output)

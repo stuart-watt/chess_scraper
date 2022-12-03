@@ -1,69 +1,44 @@
 import requests
+import typing
 import pandas as pd
-from scraper.utils import GameProcessor
 
-class ChessClient():
 
-    def __init__(self):
-        pass
 
-    def get_user(self, username) -> dict:
+class ChessClient:
+    def __init__(self, username: str):
+        self.check_user(username)
+
+    def check_user(self, username: str):
 
         r = requests.get(f"https://api.chess.com/pub/player/{username}")
         response = r.json()
 
         if r.status_code == 200:
-            return response
-        
+            self.username = username
+
         if r.status_code == 404:
-            print(response["message"])
-            return False
+            raise ValueError(response["message"])
 
+    def list_archives(self) -> list:
 
-    def get_user_stats(self, username: str) -> dict:
-        if self.get_user(username):
+        r = requests.get(
+            f"https://api.chess.com/pub/player/{self.username}/games/archives"
+        )
+        r = r.json()
 
-            r = requests.get(f"https://api.chess.com/pub/player/{username}/stats")
+        print(f"Found {len(r['archives'])} archives")
 
-            return r.json()
+        return r["archives"]
 
-    def get_user_archive_list(self, username: str) -> list:
-        if self.get_user(username):
+    def get_archive(self, url: str) -> typing.List[dict]:
+        r = requests.get(url)
+        return r.json()["games"]
 
-            r = requests.get(f"https://api.chess.com/pub/player/{username}/games/archives")
-            r = r.json()
+    def get_archive_data(self) -> pd.DataFrame:
+        
+        archives = self.list_archives()
 
-            print(f"Found {len(r['archives'])} archives")
-
-            return r['archives']
-
-    def get_archive_data(self, username: str, file: str, year: int = None, month: int = None) -> pd.DataFrame:
-        if self.get_user(username):
-            processor = GameProcessor(username)
-            
-            if not year:
-                print(f"Collecting all games for {username}")
-                archives = self.get_user_archive_list(username)
-            
-                games = []
-
-                for url in archives:
-                    r = requests.get(url)
-                    r = r.json()
-
-                    for game in r["games"]:
-                        games.append(game)
-
-                print(f"Found {len(games)} games")
-
-                processor.archive_cleaner(pd.DataFrame(games)).to_json(file, orient="records")
-
-
-            else:
-                print(f"Collecting games for {username} from {month:02}/{year}")
-                url = f"https://api.chess.com/pub/player/{username}/games/{year}/{month:02}"
-
-                r = requests.get(url)
-                r = r.json()
-
-                processor.archive_cleaner(pd.DataFrame(r["games"])).to_json(file, orient="records")
+        print("Ingesting...", end="")
+        games = [game for url in archives for game in self.get_archive(url)]
+        print(f"Done\nFound {len(games)} games")
+        return pd.DataFrame(games)
