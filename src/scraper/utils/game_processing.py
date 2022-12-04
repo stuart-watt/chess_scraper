@@ -64,7 +64,7 @@ class GameProcessor:
         pgn = chess.pgn.read_game(io.StringIO(pgn))
 
         try:
-            opening = pgn.headers["ECOUrl"].split("/")[-1]
+            opening = pgn.headers["ECOUrl"]
         except KeyError as e:
             opening = None
 
@@ -72,6 +72,7 @@ class GameProcessor:
 
     def clean_archive(self, data: pd.DataFrame) -> pd.DataFrame:
         """Combine all cleaned data points and export as a DataFrame"""
+        print("Processing games...", end="")
 
         output = []
 
@@ -91,7 +92,7 @@ class GameProcessor:
 
             game_data = self.get_opponent(row["white"], row["black"])
             result, info = self.get_result(game_data["result"], game_data["info"])
-            opening = self.get_opening(row["pgn"])
+            opening_url = self.get_opening(row["pgn"])
 
             output.append(
                 {
@@ -106,8 +107,11 @@ class GameProcessor:
                     "opponent_rating": game_data["opponent_rating"],
                     "result": result,
                     "info": info,
-                    "opening": opening,
+                    "opening": opening_url.split("/")[-1] if opening_url else None,
+                    "opening_url": opening_url
                 }
             )
+
+        print("Done!")
 
         return pd.DataFrame(output)

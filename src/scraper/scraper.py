@@ -17,9 +17,9 @@ def get_data(username: str, file: str):
 
     client = ChessClient(username)
     data = client.get_archive_data()
-    
+
     processor = GameProcessor(username)
     games = processor.clean_archive(data)
 
-    games.to_json(file, orient="records")
+    games.to_csv(file, index=False)
     return
