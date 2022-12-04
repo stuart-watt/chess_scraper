@@ -50,4 +50,4 @@ The chess scraper is defined in the `src/` directory.
 
 2. Run the scraper
 
-`chess get-data -u {username} -f {output destination}`
+`chess_scraper -u {username} -f {output destination}`

@@ -4,13 +4,7 @@ import pandas as pd
 from scraper.client import ChessClient
 from scraper.utils import GameProcessor
 
-
-@click.group()
-def cli():
-    pass
-
-
-@cli.command()
+@click.command()
 @click.option("-u", "--username", required=True, help="Chess.com username")
 @click.option(
     "-f",
@@ -23,9 +17,7 @@ def get_data(username: str, file: str):
 
     client = ChessClient(username)
     data = client.get_archive_data()
-
-    data.sample(10).to_json("src/tests/data/test.json", orient="records")
-
+    
     processor = GameProcessor(username)
     games = processor.clean_archive(data)
 

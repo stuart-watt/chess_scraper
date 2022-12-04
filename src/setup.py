@@ -16,5 +16,5 @@ setup(
     python_requires=">=3.6",
     install_requires=requires,
     include_package_data=True,
-    entry_points={"console_scripts": ["chess_scraper=scraper.scraper:cli"]},
+    entry_points={"console_scripts": ["chess_scraper=scraper.scraper:get_data"]},
 )
