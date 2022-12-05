@@ -5,7 +5,7 @@ import pandas as pd
 
 from pytest_regressions.data_regression import DataRegressionFixture
 
-from scraper.utils import GameProcessor
+from scraper.game_processing import GameProcessor
 
 
 def test_regression(
