@@ -46,13 +46,13 @@ class GameProcessor:
         ]
 
         if result == "win":
-            return ("win", info)
+            return ("Win", info)
 
         if info == "win":
-            return ("loss", result)
+            return ("Loss", result)
 
         if result == info:
-            return ("draw", info)
+            return ("Draw", info)
 
     def get_opening(self, pgn: str) -> str:
         """Extracts the opening from the PGN
