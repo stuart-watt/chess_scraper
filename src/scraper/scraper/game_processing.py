@@ -70,7 +70,7 @@ class GameProcessor:
 
         return opening
 
-    def get_timestamps(self, row: pd.DataFrame) -> datetime.datetime:
+    def get_timestamps(self, row: pd.DataFrame) -> tuple:
         try:
             start_time = datetime.fromtimestamp(row["start_time"])
         except ValueError:
@@ -83,6 +83,14 @@ class GameProcessor:
 
         return start_time, end_time
 
+    def get_time_class(self, row: pd.DataFrame) -> str:
+        if row["rules"] == "chess":
+            time_class = row["time_class"]
+        else:
+            time_class = row["time_class"] + " - " + row["rules"]
+
+        return time_class.capitalize()
+
     def clean_archive(self, data: pd.DataFrame) -> pd.DataFrame:
         """Combine all cleaned data points and export as a DataFrame"""
         print("Processing games...", end="")
@@ -92,7 +100,6 @@ class GameProcessor:
         for _, row in data.iterrows():
 
             start_time, end_time = self.get_timestamps(row)
-
             game_data = self.get_opponent(row["white"], row["black"])
             result, info = self.get_result(game_data["result"], game_data["info"])
             opening_url = self.get_opening(row["pgn"])
@@ -100,9 +107,8 @@ class GameProcessor:
             output.append(
                 {
                     "url": row["url"],
-                    "rules": row["rules"],
                     "rated": row["rated"],
-                    "time_class": row["time_class"],
+                    "time_class": self.get_time_class(row),
                     "time_control": row["time_control"],
                     "start_time": start_time,
                     "end_time": end_time,
