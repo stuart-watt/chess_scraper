@@ -11,6 +11,8 @@ export TF_VAR_region = $(PROJECT_REGION)
 
 export GOOGLE_APPLICATION_CREDENTIALS ?= ~/.gcp/gcp_credentials.json
 
+export REPOSITORY_URL ?= https://${PROJECT_ID}-python.pkg.dev/${PROJECT_ID}/chess_scraper/
+
 #############
 ## Install ##
 #############
@@ -31,6 +33,20 @@ conda:
 packages:
 	pip install -e src/scraper
 
+
+## Packages ##
+
+build:
+	cd src/scraper && rm -rf build/ dist/
+	rm -rf src/**/__pycache__/
+
+	cd src/scraper && python setup.py bdist_wheel
+	cd src/scraper && python setup.py bdist --format zip
+.PHONY: build
+
+upload: 
+	cd src/scraper && twine upload --skip-existing --repository-url ${REPOSITORY_URL} dist/*.whl
+
 #############
 ## Testing ##
 #############
@@ -49,3 +65,5 @@ format:
 ###############
 ## Terraform ##
 ###############
+
+

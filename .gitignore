@@ -20,4 +20,8 @@ notebooks/
 .terraform*
 *.tfstate*
 
-# 
+# Project-Specific ignores
+build/
+.build/
+.archive/
+dist/
