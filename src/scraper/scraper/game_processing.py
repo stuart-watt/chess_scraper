@@ -70,6 +70,19 @@ class GameProcessor:
 
         return opening
 
+    def get_timestamps(self, row: pd.DataFrame) -> datetime.datetime:
+        try:
+            start_time = datetime.fromtimestamp(row["start_time"])
+        except ValueError:
+            start_time = None
+
+        try:
+            end_time = datetime.fromtimestamp(row["end_time"])
+        except ValueError:
+            end_time = None
+
+        return start_time, end_time
+
     def clean_archive(self, data: pd.DataFrame) -> pd.DataFrame:
         """Combine all cleaned data points and export as a DataFrame"""
         print("Processing games...", end="")
@@ -78,17 +91,7 @@ class GameProcessor:
 
         for _, row in data.iterrows():
 
-            try:
-                start_time = datetime.fromtimestamp(row["start_time"])
-            except:
-                start_time = None
-
-            try:
-                end_time = datetime.fromtimestamp(row["end_time"])
-            except:
-                end_time = None
-
-            timestamp = start_time or end_time
+            start_time, end_time = self.get_timestamps(row)
 
             game_data = self.get_opponent(row["white"], row["black"])
             result, info = self.get_result(game_data["result"], game_data["info"])
@@ -97,10 +100,12 @@ class GameProcessor:
             output.append(
                 {
                     "url": row["url"],
+                    "rules": row["rules"],
                     "rated": row["rated"],
                     "time_class": row["time_class"],
                     "time_control": row["time_control"],
-                    "timestamp": timestamp,
+                    "start_time": start_time,
+                    "end_time": end_time,
                     "played": game_data["played"],
                     "rating": game_data["rating"],
                     "opponent": game_data["opponent"],
