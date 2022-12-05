@@ -29,14 +29,14 @@ conda:
 	conda env create --file environment.yaml
 
 packages:
-	pip install -e src/
+	pip install -e src/scraper
 
 #############
 ## Testing ##
 #############
 
 tests:
-	pytest src/tests/
+	pytest src/scraper/tests/
 
 ################
 ## Formatting ##
