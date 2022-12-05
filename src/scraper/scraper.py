@@ -1,8 +1,10 @@
+import os
+
 import click
 import pandas as pd
 
-from scraper.client import ChessClient
-from scraper.utils import GameProcessor
+from scraper.chess_client import ChessClient
+from scraper.game_processing import GameProcessor
 
 @click.command()
 @click.option("-u", "--username", required=True, help="Chess.com username")
@@ -11,7 +13,7 @@ from scraper.utils import GameProcessor
     "--file",
     type=click.Path(),
     required=True,
-    help="File to dump results (json extension)",
+    help="Filepath to dump results (.csv extension)",
 )
 def get_data(username: str, file: str):
 
@@ -22,4 +24,9 @@ def get_data(username: str, file: str):
     games = processor.clean_archive(data)
 
     games.to_csv(file, index=False)
+    return
+
+def main(event: dict, context: dict):
+
+    get_data(os.environ["USERNAME"], "gs://" + os.environ["DATALAKE_BUCKET"] + "/games/games.csv")
     return
