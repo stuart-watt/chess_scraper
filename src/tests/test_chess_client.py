@@ -25,7 +25,9 @@ def test_client_finds_archives(client: ChessClient):
     assert len(archives) > 0
 
 
-def test_client_pulls_archive(client: ChessClient, data_regression: DataRegressionFixture):
+def test_client_pulls_archive(
+    client: ChessClient, data_regression: DataRegressionFixture
+):
 
     archives = client.list_archives()
     data = client.get_archive(archives[0])
@@ -34,4 +36,3 @@ def test_client_pulls_archive(client: ChessClient, data_regression: DataRegressi
     assert len(data) > 0
 
     data_regression.check(data)
-

@@ -14,10 +14,10 @@ def test_regression(
     data_regression: DataRegressionFixture,
 ):
     data = pd.read_json(str(testdata))
-    
+
     processor = GameProcessor(real_username)
     games = processor.clean_archive(data)
-    
+
     outputs = json.loads(games.to_json(orient="records"))
 
     data_regression.check(outputs)

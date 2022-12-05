@@ -16,14 +16,9 @@ def get_data(username: str, file: str):
     games.to_csv(file, index=False)
     return
 
+
 @click.command()
 @click.option("-u", "--username", required=True, help="Chess.com username")
-@click.option(
-    "-f",
-    "--file",
-    type=click.Path(),
-    required=True,
-    help="Filepath to dump results (.csv extension)",
-)
+@click.option("-f", "--file", required=True,  help="Output path (.csv)")
 def main(username: str, file: str):
     get_data(username, file)

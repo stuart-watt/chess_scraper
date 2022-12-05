@@ -31,4 +31,3 @@ def proccesor(real_username: str) -> GameProcessor:
 @pytest.fixture
 def testdata() -> pathlib.Path:
     return pathlib.Path(__file__).parent / "data/test.json"
-

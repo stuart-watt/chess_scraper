@@ -108,7 +108,7 @@ class GameProcessor:
                     "result": result,
                     "info": info,
                     "opening": opening_url.split("/")[-1] if opening_url else None,
-                    "opening_url": opening_url
+                    "opening_url": opening_url,
                 }
             )
 

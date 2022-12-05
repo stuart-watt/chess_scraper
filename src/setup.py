@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-with open("requirements.txt", "r") as f:
+with open("scraper/requirements.txt", "r") as f:
     requires = f.read().split("\n")
 
 DESCRIPTION = "Scrapes game data from chess.com"

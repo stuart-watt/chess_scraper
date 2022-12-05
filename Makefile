@@ -31,21 +31,8 @@ conda:
 	conda env create --file environment.yaml
 
 packages:
-	pip install -e src/scraper
+	pip install -e src/
 
-
-## Packages ##
-
-build:
-	cd src/scraper && rm -rf build/ dist/
-	rm -rf src/**/__pycache__/
-
-	cd src/scraper && python setup.py bdist_wheel
-	cd src/scraper && python setup.py bdist --format zip
-.PHONY: build
-
-upload: 
-	cd src/scraper && twine upload --skip-existing --repository-url ${REPOSITORY_URL} dist/*.whl
 
 #############
 ## Testing ##
