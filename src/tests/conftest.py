@@ -3,8 +3,8 @@ import pathlib
 
 import pytest
 
-from scraper.client import ChessClient
-from scraper.utils import GameProcessor
+from scraper.chess_client import ChessClient
+from scraper.game_processing import GameProcessor
 
 
 @pytest.fixture

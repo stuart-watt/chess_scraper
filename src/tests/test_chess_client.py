@@ -3,7 +3,7 @@ import pandas as pd
 import pytest
 from pytest_regressions.data_regression import DataRegressionFixture
 
-from scraper.client import ChessClient
+from scraper.chess_client import ChessClient
 
 
 def test_client_passes_username(real_username: str):
