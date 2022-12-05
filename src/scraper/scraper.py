@@ -1,5 +1,3 @@
-import os
-
 import click
 import pandas as pd
 
@@ -24,9 +22,4 @@ def get_data(username: str, file: str):
     games = processor.clean_archive(data)
 
     games.to_csv(file, index=False)
-    return
-
-def main(event: dict, context: dict):
-
-    get_data(os.environ["USERNAME"], "gs://" + os.environ["DATALAKE_BUCKET"] + "/games/games.csv")
     return
