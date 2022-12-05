@@ -24,6 +24,7 @@ resource "google_cloudfunctions_function" "chess_scraper" {
 
   timeout               = 120
   available_memory_mb   = 1024
+  max_instances         = 1
 
   entry_point           = "main"
 
