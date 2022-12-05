@@ -3,14 +3,11 @@ from setuptools import find_packages, setup
 with open("requirements.txt", "r") as f:
     requires = f.read().split("\n")
 
-VERSION = "0.0.0"
-DESCRIPTION = "Chess.com scraper"
+DESCRIPTION = "Scrapes game data from chess.com"
 
 # Setting up
 setup(
     name="chess_scraper",
-    version=VERSION,
-    author="Stuart Watt",
     description=DESCRIPTION,
     packages=find_packages(),
     python_requires=">=3.6",
