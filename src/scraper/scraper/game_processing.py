@@ -151,3 +151,27 @@ class GameProcessor:
 
         return pd.DataFrame(output)
 
+    def calculate_ratings(self, data: pd.DataFrame) -> pd.DataFrame:
+        """Calculate a continuous daily rating for each time-class"""
+
+        print("Calculating ratings...", end="")
+
+        data["date"] = data["end_time"].dt.date
+
+        data = data.sort_values(by="end_time")
+
+        date_range = pd.DataFrame(pd.date_range(data["date"].min(), datetime.today()), columns=["date"])
+        date_range["date"] = date_range["date"].dt.date
+
+        date_class_master = date_range.merge(data["time_class"].drop_duplicates(), how="cross")
+
+        ratings = data[["date", "time_class", "rating"]].groupby(["time_class", "date"]).last().reset_index()
+
+        ratings = date_class_master.merge(ratings, how="left", on=["date", "time_class"])
+
+        ratings["rating"] = ratings.groupby("time_class").fillna(method = 'ffill')["rating"]
+
+        print("Done!")
+
+        return ratings.dropna().sort_values(by=["date", "time_class"])
+
