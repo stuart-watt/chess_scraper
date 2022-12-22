@@ -102,6 +102,16 @@ class GameProcessor:
 
         return time_class.capitalize()
 
+    def count_moves(self, row: pd.DataFrame, played: str) -> int:
+        pgn = self.extract_pgn_data(row)
+
+        n_moves = len([_ for _ in pgn.mainline()])
+
+        # if the n_moves is even, white and black played the same number of moves
+        # else white played one more than black 
+
+        return int(n_moves/2) + 1 if played == "White" else int(n_moves/2)
+
     def clean_archive(self, data: pd.DataFrame) -> pd.DataFrame:
         """Combine all cleaned data points and export as a DataFrame"""
         print("Processing games...", end="")
@@ -125,6 +135,7 @@ class GameProcessor:
                     "start_time": start_time,
                     "end_time": end_time,
                     "duration": duration,
+                    "n_moves": self.count_moves(row, game_data["played"]),
                     "played": game_data["played"],
                     "rating": game_data["rating"],
                     "opponent": game_data["opponent"],

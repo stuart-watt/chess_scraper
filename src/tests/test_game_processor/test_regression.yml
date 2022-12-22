@@ -1,6 +1,7 @@
 - duration: 1051
   end_time: 1618925172000
   info: resigned
+  n_moves: 56
   opening: Modern-Defense-Averbakh-Variation
   opening_url: https://www.chess.com/openings/Modern-Defense-Averbakh-Variation
   opponent: RickyAcosta69
@@ -16,6 +17,7 @@
 - duration: 703
   end_time: 1619771890000
   info: checkmated
+  n_moves: 45
   opening: Ruy-Lopez-Opening-Cozio-Defense-4.d4
   opening_url: https://www.chess.com/openings/Ruy-Lopez-Opening-Cozio-Defense-4.d4
   opponent: victormongar06
@@ -31,6 +33,7 @@
 - duration: 435
   end_time: 1645166702000
   info: resigned
+  n_moves: 46
   opening: French-Defense-Knight-Variation
   opening_url: https://www.chess.com/openings/French-Defense-Knight-Variation
   opponent: Katarina81
@@ -46,6 +49,7 @@
 - duration: 710
   end_time: 1554022849000
   info: checkmated
+  n_moves: 34
   opening: Ruy-Lopez-Opening-Cozio-Defense-4.Nc3
   opening_url: https://www.chess.com/openings/Ruy-Lopez-Opening-Cozio-Defense-4.Nc3
   opponent: endlessJ
@@ -61,6 +65,7 @@
 - duration: 503
   end_time: 1571230240000
   info: resigned
+  n_moves: 24
   opening: French-Defense-Advance-Paulsen-Euwe-Variation
   opening_url: https://www.chess.com/openings/French-Defense-Advance-Paulsen-Euwe-Variation
   opponent: Scott_Hake
@@ -76,6 +81,7 @@
 - duration: 252
   end_time: 1652580728000
   info: abandoned
+  n_moves: 8
   opening: Vant-Kruijs-Opening-1...e5
   opening_url: https://www.chess.com/openings/Vant-Kruijs-Opening-1...e5
   opponent: Manga7667
@@ -91,6 +97,7 @@
 - duration: 223
   end_time: 1567207871000
   info: resigned
+  n_moves: 13
   opening: Sicilian-Defense-Nyezhmetdinov-Rossolimo-Attack-3...Nf6
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Nyezhmetdinov-Rossolimo-Attack-3...Nf6
   opponent: OGO53
@@ -106,6 +113,7 @@
 - duration: 754
   end_time: 1660868104000
   info: resigned
+  n_moves: 38
   opening: Scandinavian-Defense-Mieses-Kotrc-Variation-3.Nc3-Qd8
   opening_url: https://www.chess.com/openings/Scandinavian-Defense-Mieses-Kotrc-Variation-3.Nc3-Qd8
   opponent: SSENTHILRAJA
@@ -121,6 +129,7 @@
 - duration: 495
   end_time: 1668297333000
   info: checkmated
+  n_moves: 33
   opening: Scandinavian-Defense
   opening_url: https://www.chess.com/openings/Scandinavian-Defense
   opponent: Perazzi134152
@@ -136,6 +145,7 @@
 - duration: 929
   end_time: 1557202260000
   info: resigned
+  n_moves: 36
   opening: French-Defense-Horwitz-Attack
   opening_url: https://www.chess.com/openings/French-Defense-Horwitz-Attack
   opponent: uraneous
@@ -151,6 +161,7 @@
 - duration: 503
   end_time: 1656826880000
   info: resigned
+  n_moves: 27
   opening: Philidor-Defense
   opening_url: https://www.chess.com/openings/Philidor-Defense
   opponent: Nilayksv2
@@ -166,6 +177,7 @@
 - duration: 436
   end_time: 1636199417000
   info: resigned
+  n_moves: 30
   opening: Ruy-Lopez-Opening-Old-Steinitz-Defense
   opening_url: https://www.chess.com/openings/Ruy-Lopez-Opening-Old-Steinitz-Defense
   opponent: Brezzi
@@ -181,6 +193,7 @@
 - duration: 374
   end_time: 1562748402000
   info: resigned
+  n_moves: 27
   opening: Ruy-Lopez-Opening-Morphy-Defense-Exchange-Alekhine-Variation-with-7-Bd6
   opening_url: https://www.chess.com/openings/Ruy-Lopez-Opening-Morphy-Defense-Exchange-Alekhine-Variation-with-7-Bd6
   opponent: chugoy2
@@ -196,6 +209,7 @@
 - duration: 284
   end_time: 1667900722000
   info: resigned
+  n_moves: 33
   opening: Ruy-Lopez-Opening-Old-Steinitz-Defense-4.d4-Bd7
   opening_url: https://www.chess.com/openings/Ruy-Lopez-Opening-Old-Steinitz-Defense-4.d4-Bd7
   opponent: Harald1978
@@ -211,6 +225,7 @@
 - duration: 623
   end_time: 1620888875000
   info: resigned
+  n_moves: 25
   opening: Modern-Defense-with-1-e4-2.d4-d6-3.Nf3
   opening_url: https://www.chess.com/openings/Modern-Defense-with-1-e4-2.d4-d6-3.Nf3
   opponent: Gazanri
@@ -226,6 +241,7 @@
 - duration: 285
   end_time: 1586478290000
   info: resigned
+  n_moves: 26
   opening: Sicilian-Defense-Chekhover-Variation-4...Nc6-5.Bb5
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Chekhover-Variation-4...Nc6-5.Bb5
   opponent: Zjlmonkey
@@ -241,6 +257,7 @@
 - duration: 151
   end_time: 1636113663000
   info: resigned
+  n_moves: 19
   opening: French-Defense-Exchange-Variation-3...exd5-4.Nf3
   opening_url: https://www.chess.com/openings/French-Defense-Exchange-Variation-3...exd5-4.Nf3
   opponent: 07706009044
@@ -256,6 +273,7 @@
 - duration: 532
   end_time: 1623726921000
   info: checkmated
+  n_moves: 66
   opening: Kings-Fianchetto-Opening-Regan-Variation
   opening_url: https://www.chess.com/openings/Kings-Fianchetto-Opening-Regan-Variation
   opponent: tlj127
@@ -271,6 +289,7 @@
 - duration: 312
   end_time: 1654343170000
   info: resigned
+  n_moves: 26
   opening: Kings-Pawn-Opening-Kings-Knight-Busch-Gass-Gambit-3.Nxe5
   opening_url: https://www.chess.com/openings/Kings-Pawn-Opening-Kings-Knight-Busch-Gass-Gambit-3.Nxe5
   opponent: pasito
@@ -286,6 +305,7 @@
 - duration: 730
   end_time: 1623911871000
   info: resigned
+  n_moves: 66
   opening: Caro-Kann-Defense-2.d4
   opening_url: https://www.chess.com/openings/Caro-Kann-Defense-2.d4
   opponent: putikorw
@@ -301,6 +321,7 @@
 - duration: 1060
   end_time: 1623632074000
   info: resigned
+  n_moves: 71
   opening: Nimzowitsch-Defense-Declined-Franco-Nimzowitsch-Variation
   opening_url: https://www.chess.com/openings/Nimzowitsch-Defense-Declined-Franco-Nimzowitsch-Variation
   opponent: aceFace7
@@ -316,6 +337,7 @@
 - duration: 825
   end_time: 1614656156000
   info: timeout
+  n_moves: 27
   opening: Nimzowitsch-Defense-Scandinavian-Bogoljubov-Erben-Gambit
   opening_url: https://www.chess.com/openings/Nimzowitsch-Defense-Scandinavian-Bogoljubov-Erben-Gambit
   opponent: pritamnsrse
@@ -331,6 +353,7 @@
 - duration: 691
   end_time: 1629419134000
   info: checkmated
+  n_moves: 49
   opening: French-Defense-Knight-Variation
   opening_url: https://www.chess.com/openings/French-Defense-Knight-Variation
   opponent: fresto80
@@ -346,6 +369,7 @@
 - duration: 837
   end_time: 1585629746000
   info: resigned
+  n_moves: 43
   opening: Sicilian-Defense-Smith-Morra-Gambit-2...cxd4-3.Qxd4-Nc6-4.Qd1
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Smith-Morra-Gambit-2...cxd4-3.Qxd4-Nc6-4.Qd1
   opponent: felix177
@@ -361,6 +385,7 @@
 - duration: 1134
   end_time: 1623296498000
   info: abandoned
+  n_moves: 49
   opening: Modern-Defense-with-1-d4-2.c4-Bg7-3.Nc3
   opening_url: https://www.chess.com/openings/Modern-Defense-with-1-d4-2.c4-Bg7-3.Nc3
   opponent: rabigupta
@@ -376,6 +401,7 @@
 - duration: 599
   end_time: 1614823733000
   info: resigned
+  n_moves: 36
   opening: French-Defense-Advance-Variation
   opening_url: https://www.chess.com/openings/French-Defense-Advance-Variation
   opponent: Armscube30
@@ -391,6 +417,7 @@
 - duration: 82583
   end_time: 1460883127000
   info: checkmated
+  n_moves: 33
   opening: Kings-Fianchetto-Opening
   opening_url: https://www.chess.com/openings/Kings-Fianchetto-Opening
   opponent: BY9
@@ -406,6 +433,7 @@
 - duration: 351
   end_time: 1550479315000
   info: resigned
+  n_moves: 25
   opening: Kings-Pawn-Opening-Tortoise-Opening
   opening_url: https://www.chess.com/openings/Kings-Pawn-Opening-Tortoise-Opening
   opponent: loladice
@@ -421,6 +449,7 @@
 - duration: 761
   end_time: 1562147664000
   info: repetition
+  n_moves: 37
   opening: French-Defense-Steinitz-Attack
   opening_url: https://www.chess.com/openings/French-Defense-Steinitz-Attack
   opponent: Gemini_31
@@ -436,6 +465,7 @@
 - duration: 356
   end_time: 1650078255000
   info: resigned
+  n_moves: 26
   opening: Ruy-Lopez-Opening-Old-Steinitz-Defense-4.d4
   opening_url: https://www.chess.com/openings/Ruy-Lopez-Opening-Old-Steinitz-Defense-4.d4
   opponent: panzon23
@@ -451,6 +481,7 @@
 - duration: 938
   end_time: 1566182230000
   info: resigned
+  n_moves: 46
   opening: Sicilian-Defense-Delayed-Alapin-Variation
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Delayed-Alapin-Variation
   opponent: Socr4t3s
@@ -466,6 +497,7 @@
 - duration: 24818
   end_time: 1464942858000
   info: checkmated
+  n_moves: 18
   opening: Queens-Pawn-Opening-Zukertort-Variation
   opening_url: https://www.chess.com/openings/Queens-Pawn-Opening-Zukertort-Variation
   opponent: wells006
@@ -481,6 +513,7 @@
 - duration: 335
   end_time: 1623718755000
   info: resigned
+  n_moves: 22
   opening: French-Defense-Knight-Variation
   opening_url: https://www.chess.com/openings/French-Defense-Knight-Variation
   opponent: M_cassa
@@ -496,6 +529,7 @@
 - duration: 119
   end_time: 1650175485000
   info: abandoned
+  n_moves: 12
   opening: Ruy-Lopez-Opening-Berlin-Improved-Steinitz-Defense
   opening_url: https://www.chess.com/openings/Ruy-Lopez-Opening-Berlin-Improved-Steinitz-Defense
   opponent: temutemu
@@ -511,6 +545,7 @@
 - duration: 898
   end_time: 1669334150000
   info: repetition
+  n_moves: 33
   opening: French-Defense-Kings-Indian-Attack-2...d5-3.Qe2
   opening_url: https://www.chess.com/openings/French-Defense-Kings-Indian-Attack-2...d5-3.Qe2
   opponent: G9hors
@@ -526,6 +561,7 @@
 - duration: 845
   end_time: 1559617786000
   info: resigned
+  n_moves: 49
   opening: Four-Knights-Game
   opening_url: https://www.chess.com/openings/Four-Knights-Game
   opponent: Sergito4
@@ -541,6 +577,7 @@
 - duration: 240
   end_time: 1550219981000
   info: checkmated
+  n_moves: 20
   opening: Old-Benoni-Defense-Franco-Benoni-Defense
   opening_url: https://www.chess.com/openings/Old-Benoni-Defense-Franco-Benoni-Defense
   opponent: Geir123
@@ -556,6 +593,7 @@
 - duration: 1128
   end_time: 1565863347000
   info: stalemate
+  n_moves: 77
   opening: Sicilian-Defense-Nyezhmetdinov-Rossolimo-Fianchetto-Variation-4.Bxc6
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Nyezhmetdinov-Rossolimo-Fianchetto-Variation-4.Bxc6
   opponent: Dr_pebcak
@@ -571,6 +609,7 @@
 - duration: 520
   end_time: 1665961610000
   info: resigned
+  n_moves: 40
   opening: Queens-Pawn-Opening-Tartakower-Variation
   opening_url: https://www.chess.com/openings/Queens-Pawn-Opening-Tartakower-Variation
   opponent: leonardogomespires
@@ -586,6 +625,7 @@
 - duration: 554
   end_time: 1563675686000
   info: resigned
+  n_moves: 33
   opening: Sicilian-Defense-Nyezhmetdinov-Rossolimo-Attack
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Nyezhmetdinov-Rossolimo-Attack
   opponent: Shegspir1
@@ -601,6 +641,7 @@
 - duration: 637
   end_time: 1577371692000
   info: resigned
+  n_moves: 37
   opening: Alekhines-Defense
   opening_url: https://www.chess.com/openings/Alekhines-Defense
   opponent: redfern23
@@ -616,6 +657,7 @@
 - duration: 100
   end_time: 1550844820000
   info: resigned
+  n_moves: 13
   opening: Kings-Pawn-Opening-Kings-Knight-Busch-Gass-Gambit-3.Nxe5
   opening_url: https://www.chess.com/openings/Kings-Pawn-Opening-Kings-Knight-Busch-Gass-Gambit-3.Nxe5
   opponent: manutd1999
@@ -631,6 +673,7 @@
 - duration: 691
   end_time: 1669945288000
   info: checkmated
+  n_moves: 76
   opening: Kings-Fianchetto-Opening-1...e5-2.Bg2-d5
   opening_url: https://www.chess.com/openings/Kings-Fianchetto-Opening-1...e5-2.Bg2-d5
   opponent: ahmedshaaban412
@@ -646,6 +689,7 @@
 - duration: 93
   end_time: 1586303032000
   info: resigned
+  n_moves: 10
   opening: Sicilian-Defense-Chekhover-Variation
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Chekhover-Variation
   opponent: bbrown5
@@ -661,6 +705,7 @@
 - duration: 629
   end_time: 1552543439000
   info: timeout
+  n_moves: 69
   opening: Kings-Pawn-Opening-Owens-Defense
   opening_url: https://www.chess.com/openings/Kings-Pawn-Opening-Owens-Defense
   opponent: Chellamchellam
@@ -676,6 +721,7 @@
 - duration: 572
   end_time: 1650616592000
   info: resigned
+  n_moves: 27
   opening: Queens-Pawn-Opening-1...d6-2.c4
   opening_url: https://www.chess.com/openings/Queens-Pawn-Opening-1...d6-2.c4
   opponent: Xsi
@@ -691,6 +737,7 @@
 - duration: 672
   end_time: 1562473950000
   info: resigned
+  n_moves: 34
   opening: French-Defense-Advance-Nimzowitsch-System
   opening_url: https://www.chess.com/openings/French-Defense-Advance-Nimzowitsch-System
   opponent: 4st
@@ -706,6 +753,7 @@
 - duration: 625
   end_time: 1563194130000
   info: resigned
+  n_moves: 34
   opening: French-Defense-Exchange-Variation-3...Qxd5
   opening_url: https://www.chess.com/openings/French-Defense-Exchange-Variation-3...Qxd5
   opponent: Vijay_Chouhan
@@ -721,6 +769,7 @@
 - duration: 157
   end_time: 1637566119000
   info: resigned
+  n_moves: 20
   opening: Queens-Pawn-Opening-1...c6
   opening_url: https://www.chess.com/openings/Queens-Pawn-Opening-1...c6
   opponent: waseemrasheed
@@ -736,6 +785,7 @@
 - duration: 595
   end_time: 1643088797000
   info: resigned
+  n_moves: 31
   opening: Ruy-Lopez-Opening-Berlin-Defense
   opening_url: https://www.chess.com/openings/Ruy-Lopez-Opening-Berlin-Defense
   opponent: loveadvik
@@ -751,6 +801,7 @@
 - duration: 263
   end_time: 1565581119000
   info: checkmated
+  n_moves: 16
   opening: Queens-Pawn-Opening-St-George-Defense-2.c4-b5-3.e4
   opening_url: https://www.chess.com/openings/Queens-Pawn-Opening-St-George-Defense-2.c4-b5-3.e4
   opponent: airic2222
@@ -766,6 +817,7 @@
 - duration: 7607
   end_time: 1459413089000
   info: checkmated
+  n_moves: 17
   opening: English-Opening-Symmetrical-Variation
   opening_url: https://www.chess.com/openings/English-Opening-Symmetrical-Variation
   opponent: RadioActiveRabbit
@@ -781,6 +833,7 @@
 - duration: 519
   end_time: 1618548148000
   info: stalemate
+  n_moves: 42
   opening: Scandinavian-Defense-Mieses-Kotrc-Variation-3.Nc3
   opening_url: https://www.chess.com/openings/Scandinavian-Defense-Mieses-Kotrc-Variation-3.Nc3
   opponent: walwil777
@@ -796,6 +849,7 @@
 - duration: 667
   end_time: 1653539870000
   info: resigned
+  n_moves: 38
   opening: French-Defense-Advance-Variation-3...c5-4.c3
   opening_url: https://www.chess.com/openings/French-Defense-Advance-Variation-3...c5-4.c3
   opponent: mehrdad13540307
@@ -811,6 +865,7 @@
 - duration: 499
   end_time: 1664443787000
   info: resigned
+  n_moves: 40
   opening: Queens-Pawn-Opening-Horwitz-Defense
   opening_url: https://www.chess.com/openings/Queens-Pawn-Opening-Horwitz-Defense
   opponent: Cipriancretu
@@ -826,6 +881,7 @@
 - duration: 375
   end_time: 1613110153000
   info: resigned
+  n_moves: 26
   opening: French-Defense-Normal-Variation
   opening_url: https://www.chess.com/openings/French-Defense-Normal-Variation
   opponent: rodrigoboccaloni
@@ -841,6 +897,7 @@
 - duration: 1054
   end_time: 1662903247000
   info: checkmated
+  n_moves: 80
   opening: French-Defense
   opening_url: https://www.chess.com/openings/French-Defense
   opponent: Viktor3636
@@ -856,6 +913,7 @@
 - duration: 513
   end_time: 1574224705000
   info: resigned
+  n_moves: 24
   opening: French-Defense-Knight-Variation-2...d5
   opening_url: https://www.chess.com/openings/French-Defense-Knight-Variation-2...d5
   opponent: MoonPatrol126
@@ -871,6 +929,7 @@
 - duration: 297
   end_time: 1555669156000
   info: resigned
+  n_moves: 15
   opening: Modern-Defense-with-1-d4
   opening_url: https://www.chess.com/openings/Modern-Defense-with-1-d4
   opponent: stian33
@@ -886,6 +945,7 @@
 - duration: 444
   end_time: 1664623092000
   info: resigned
+  n_moves: 36
   opening: Ruy-Lopez-Opening-Birds-Defense-4.Nxd4-exd4-5.d3
   opening_url: https://www.chess.com/openings/Ruy-Lopez-Opening-Birds-Defense-4.Nxd4-exd4-5.d3
   opponent: Richardmaglente
@@ -901,6 +961,7 @@
 - duration: 451
   end_time: 1561102494000
   info: timeout
+  n_moves: 16
   opening: Scandinavian-Defense-Mieses-Kotrc-Variation-3.Nc3-Qd8
   opening_url: https://www.chess.com/openings/Scandinavian-Defense-Mieses-Kotrc-Variation-3.Nc3-Qd8
   opponent: Bogous
@@ -916,6 +977,7 @@
 - duration: 565
   end_time: 1595999334000
   info: resigned
+  n_moves: 26
   opening: Queens-Pawn-Opening-Horwitz-Defense-2.Bf4
   opening_url: https://www.chess.com/openings/Queens-Pawn-Opening-Horwitz-Defense-2.Bf4
   opponent: Bogussila
@@ -931,6 +993,7 @@
 - duration: 584
   end_time: 1661387639000
   info: checkmated
+  n_moves: 22
   opening: French-Defense-Kings-Indian-Attack
   opening_url: https://www.chess.com/openings/French-Defense-Kings-Indian-Attack
   opponent: samuellightfoot
@@ -946,6 +1009,7 @@
 - duration: 782
   end_time: 1558424384000
   info: resigned
+  n_moves: 53
   opening: Kings-Pawn-Opening-Wayward-Queen-Attack-2...Nc6-3.Bc4
   opening_url: https://www.chess.com/openings/Kings-Pawn-Opening-Wayward-Queen-Attack-2...Nc6-3.Bc4
   opponent: besmillah12
@@ -961,6 +1025,7 @@
 - duration: 8479
   end_time: 1485261257000
   info: checkmated
+  n_moves: 46
   opening: Nimzowitsch-Larsen-Attack-Modern-Variation-2.Bb2-d6
   opening_url: https://www.chess.com/openings/Nimzowitsch-Larsen-Attack-Modern-Variation-2.Bb2-d6
   opponent: Gabriel169
@@ -976,6 +1041,7 @@
 - duration: 957
   end_time: 1548335767000
   info: checkmated
+  n_moves: 19
   opening: Nimzowitsch-Defense-2.d4-e6
   opening_url: https://www.chess.com/openings/Nimzowitsch-Defense-2.d4-e6
   opponent: iOne153
@@ -991,6 +1057,7 @@
 - duration: 388
   end_time: 1550884747000
   info: checkmated
+  n_moves: 64
   opening: Bishops-Opening-Philidor-Counterattack-3.d4
   opening_url: https://www.chess.com/openings/Bishops-Opening-Philidor-Counterattack-3.d4
   opponent: vader_darth
@@ -1006,6 +1073,7 @@
 - duration: 777
   end_time: 1624274798000
   info: resigned
+  n_moves: 62
   opening: French-Defense-Winawer-Winckelmann-Riemer-Gambit-4...Bxc3-5.bxc3
   opening_url: https://www.chess.com/openings/French-Defense-Winawer-Winckelmann-Riemer-Gambit-4...Bxc3-5.bxc3
   opponent: nincolaas
@@ -1021,6 +1089,7 @@
 - duration: 220
   end_time: 1569040213000
   info: resigned
+  n_moves: 21
   opening: French-Defense-Advance-Variation-3...c5-4.c3
   opening_url: https://www.chess.com/openings/French-Defense-Advance-Variation-3...c5-4.c3
   opponent: Sithistorian
@@ -1036,6 +1105,7 @@
 - duration: 215
   end_time: 1550644490000
   info: checkmated
+  n_moves: 14
   opening: Kings-Pawn-Opening-Kings-Knight-Busch-Gass-Gambit
   opening_url: https://www.chess.com/openings/Kings-Pawn-Opening-Kings-Knight-Busch-Gass-Gambit
   opponent: sander_23
@@ -1051,6 +1121,7 @@
 - duration: 278
   end_time: 1569040830000
   info: resigned
+  n_moves: 21
   opening: Caro-Kann-Defense-2.Nf3-d5
   opening_url: https://www.chess.com/openings/Caro-Kann-Defense-2.Nf3-d5
   opponent: Drykinzor
@@ -1066,6 +1137,7 @@
 - duration: 747
   end_time: 1560160379000
   info: timeout
+  n_moves: 24
   opening: Pirc-Defense-Maroczy-Defense
   opening_url: https://www.chess.com/openings/Pirc-Defense-Maroczy-Defense
   opponent: michele1773
@@ -1081,6 +1153,7 @@
 - duration: 573
   end_time: 1669885710000
   info: resigned
+  n_moves: 42
   opening: French-Defense-Advance-Nimzowitsch-System-4...cxd4
   opening_url: https://www.chess.com/openings/French-Defense-Advance-Nimzowitsch-System-4...cxd4
   opponent: shady081141
@@ -1096,6 +1169,7 @@
 - duration: 68
   end_time: 1578744742000
   info: resigned
+  n_moves: 7
   opening: Center-Game-Accepted-Normal-Variation
   opening_url: https://www.chess.com/openings/Center-Game-Accepted-Normal-Variation
   opponent: Ignavv
@@ -1111,6 +1185,7 @@
 - duration: 591
   end_time: 1628998511000
   info: resigned
+  n_moves: 39
   opening: Philidor-Defense
   opening_url: https://www.chess.com/openings/Philidor-Defense
   opponent: 55dipankar
@@ -1126,6 +1201,7 @@
 - duration: 319
   end_time: 1558929016000
   info: resigned
+  n_moves: 19
   opening: Sicilian-Defense-Bowdler-Attack
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Bowdler-Attack
   opponent: 1C1r2Y3pto5_8
@@ -1141,6 +1217,7 @@
 - duration: 495
   end_time: 1618129099000
   info: resigned
+  n_moves: 33
   opening: Ruy-Lopez-Opening-Berlin-Defense-4.d4-exd4
   opening_url: https://www.chess.com/openings/Ruy-Lopez-Opening-Berlin-Defense-4.d4-exd4
   opponent: StanislavPA
@@ -1156,6 +1233,7 @@
 - duration: 864
   end_time: 1620773557000
   info: insufficient
+  n_moves: 54
   opening: French-Defense-Exchange-Variation-3...exd5-4.Nc3-Bb4
   opening_url: https://www.chess.com/openings/French-Defense-Exchange-Variation-3...exd5-4.Nc3-Bb4
   opponent: thehusainraza
@@ -1171,6 +1249,7 @@
 - duration: 252
   end_time: 1554863198000
   info: resigned
+  n_moves: 13
   opening: Bishops-Opening
   opening_url: https://www.chess.com/openings/Bishops-Opening
   opponent: jazhecita
@@ -1186,6 +1265,7 @@
 - duration: 110
   end_time: 1569040995000
   info: resigned
+  n_moves: 11
   opening: French-Defense-Knight-Variation
   opening_url: https://www.chess.com/openings/French-Defense-Knight-Variation
   opponent: ali906
@@ -1201,6 +1281,7 @@
 - duration: 826
   end_time: 1640333529000
   info: checkmated
+  n_moves: 69
   opening: Modern-Defense-with-1-d4
   opening_url: https://www.chess.com/openings/Modern-Defense-with-1-d4
   opponent: williampap2002
@@ -1216,6 +1297,7 @@
 - duration: 518
   end_time: 1654332858000
   info: resigned
+  n_moves: 32
   opening: Scandinavian-Defense-Mieses-Kotrc-Main-Line
   opening_url: https://www.chess.com/openings/Scandinavian-Defense-Mieses-Kotrc-Main-Line
   opponent: jainister
@@ -1231,6 +1313,7 @@
 - duration: 589
   end_time: 1629776193000
   info: resigned
+  n_moves: 34
   opening: Queens-Pawn-Opening-1...c6
   opening_url: https://www.chess.com/openings/Queens-Pawn-Opening-1...c6
   opponent: bludzei
@@ -1246,6 +1329,7 @@
 - duration: 391
   end_time: 1663764814000
   info: resigned
+  n_moves: 23
   opening: French-Defense-Knight-Variation
   opening_url: https://www.chess.com/openings/French-Defense-Knight-Variation
   opponent: Alexsbiz
@@ -1261,6 +1345,7 @@
 - duration: 101
   end_time: 1565178568000
   info: resigned
+  n_moves: 8
   opening: French-Defense-Exchange-Variation-3...exd5
   opening_url: https://www.chess.com/openings/French-Defense-Exchange-Variation-3...exd5
   opponent: a88chess
@@ -1276,6 +1361,7 @@
 - duration: 1000
   end_time: 1568261711000
   info: timeout
+  n_moves: 48
   opening: Philidor-Defense
   opening_url: https://www.chess.com/openings/Philidor-Defense
   opponent: RAJ_MISHRA001
@@ -1291,6 +1377,7 @@
 - duration: 453
   end_time: 1637550031000
   info: checkmated
+  n_moves: 51
   opening: French-Defense
   opening_url: https://www.chess.com/openings/French-Defense
   opponent: Santana195
@@ -1306,6 +1393,7 @@
 - duration: 749
   end_time: 1642824257000
   info: resigned
+  n_moves: 36
   opening: French-Defense-Knight-Variation
   opening_url: https://www.chess.com/openings/French-Defense-Knight-Variation
   opponent: dpasuri
@@ -1321,6 +1409,7 @@
 - duration: 61
   end_time: 1550801320000
   info: checkmated
+  n_moves: 7
   opening: Bishops-Opening
   opening_url: https://www.chess.com/openings/Bishops-Opening
   opponent: Takenovers
@@ -1336,6 +1425,7 @@
 - duration: 453
   end_time: 1661834441000
   info: resigned
+  n_moves: 27
   opening: Sicilian-Defense-Closed-Traditional-Line
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Closed-Traditional-Line
   opponent: GreenmanS
@@ -1351,6 +1441,7 @@
 - duration: 419
   end_time: 1624268662000
   info: resigned
+  n_moves: 37
   opening: Reti-Opening-Queens-Gambit-Invitation
   opening_url: https://www.chess.com/openings/Reti-Opening-Queens-Gambit-Invitation
   opponent: hamroe
@@ -1366,6 +1457,7 @@
 - duration: 416
   end_time: 1550369923000
   info: checkmated
+  n_moves: 50
   opening: Kings-Pawn-Opening-Leonardis-Variation-2...d5
   opening_url: https://www.chess.com/openings/Kings-Pawn-Opening-Leonardis-Variation-2...d5
   opponent: Godrit
@@ -1381,6 +1473,7 @@
 - duration: 7578
   end_time: 1463295913000
   info: checkmated
+  n_moves: 31
   opening: Kings-Pawn-Opening-Kings-Knight-Variation
   opening_url: https://www.chess.com/openings/Kings-Pawn-Opening-Kings-Knight-Variation
   opponent: XVagus
@@ -1396,6 +1489,7 @@
 - duration: 10405
   end_time: 1485866152000
   info: resigned
+  n_moves: 17
   opening: Bishops-Opening
   opening_url: https://www.chess.com/openings/Bishops-Opening
   opponent: Trevsy
@@ -1411,6 +1505,7 @@
 - duration: 478
   end_time: 1557658857000
   info: resigned
+  n_moves: 41
   opening: Bishops-Opening-Berlin-Defense-3.d3-Bc5
   opening_url: https://www.chess.com/openings/Bishops-Opening-Berlin-Defense-3.d3-Bc5
   opponent: faeryhorse
@@ -1426,6 +1521,7 @@
 - duration: 758
   end_time: 1564066871000
   info: timeout
+  n_moves: 26
   opening: Sicilian-Defense-Normal-Line
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Normal-Line
   opponent: RaTTaK
@@ -1441,6 +1537,7 @@
 - duration: 649
   end_time: 1621903134000
   info: resigned
+  n_moves: 44
   opening: French-Defense-Steinitz-Attack
   opening_url: https://www.chess.com/openings/French-Defense-Steinitz-Attack
   opponent: easyeddy1
@@ -1456,6 +1553,7 @@
 - duration: 640
   end_time: 1595836993000
   info: resigned
+  n_moves: 28
   opening: French-Defense-Advance-Variation-3...c5-4.c3
   opening_url: https://www.chess.com/openings/French-Defense-Advance-Variation-3...c5-4.c3
   opponent: chessengineer81
@@ -1471,6 +1569,7 @@
 - duration: 452
   end_time: 1564195726000
   info: resigned
+  n_moves: 22
   opening: Sicilian-Defense-OKelly-Taimanov-Line
   opening_url: https://www.chess.com/openings/Sicilian-Defense-OKelly-Taimanov-Line
   opponent: christopher324
@@ -1486,6 +1585,7 @@
 - duration: 1451
   end_time: 1478137896000
   info: checkmated
+  n_moves: 26
   opening: Kings-Gambit-Accepted-Villemson-Gambit
   opening_url: https://www.chess.com/openings/Kings-Gambit-Accepted-Villemson-Gambit
   opponent: mitchhersey
