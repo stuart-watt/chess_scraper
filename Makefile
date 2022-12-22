@@ -39,7 +39,7 @@ packages:
 #############
 
 tests:
-	pytest src/scraper/tests/
+	pytest src/tests/
 
 ################
 ## Formatting ##

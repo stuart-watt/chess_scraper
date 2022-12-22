@@ -73,12 +73,12 @@ class GameProcessor:
     def get_timestamps(self, row: pd.DataFrame) -> tuple:
         try:
             start_time = datetime.fromtimestamp(row["start_time"])
-        except ValueError:
+        except TypeError:
             start_time = None
 
         try:
             end_time = datetime.fromtimestamp(row["end_time"])
-        except ValueError:
+        except TypeError:
             end_time = None
 
         return start_time, end_time

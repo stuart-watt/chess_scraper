@@ -1,4 +1,5 @@
-- info: resigned
+- end_time: null
+  info: resigned
   opening: Sicilian-Defense-Chekhover-Variation-4...Nc6-5.Bb5
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Chekhover-Variation-4...Nc6-5.Bb5
   opponent: dbrmath
@@ -6,12 +7,13 @@
   played: white
   rated: true
   rating: 1201
-  result: win
-  time_class: blitz
+  result: Win
+  start_time: null
+  time_class: Blitz
   time_control: 300+5
-  timestamp: null
   url: https://www.chess.com/game/live/4283156669
-- info: resigned
+- end_time: null
+  info: resigned
   opening: Vant-Kruijs-Opening-1...e5
   opening_url: https://www.chess.com/openings/Vant-Kruijs-Opening-1...e5
   opponent: valenessuno
@@ -19,12 +21,13 @@
   played: black
   rated: true
   rating: 1171
-  result: loss
-  time_class: blitz
+  result: Loss
+  start_time: null
+  time_class: Blitz
   time_control: 300+5
-  timestamp: null
   url: https://www.chess.com/game/live/3602788018
-- info: resigned
+- end_time: null
+  info: resigned
   opening: French-Defense-Knight-Variation
   opening_url: https://www.chess.com/openings/French-Defense-Knight-Variation
   opponent: GoshaFedorov
@@ -32,12 +35,13 @@
   played: black
   rated: true
   rating: 1380
-  result: win
-  time_class: rapid
+  result: Win
+  start_time: null
+  time_class: Rapid
   time_control: '600'
-  timestamp: null
   url: https://www.chess.com/game/live/41760600661
-- info: resigned
+- end_time: null
+  info: resigned
   opening: French-Defense-Exchange-Variation-3...exd5-4.Nf3
   opening_url: https://www.chess.com/openings/French-Defense-Exchange-Variation-3...exd5-4.Nf3
   opponent: mj-05
@@ -45,12 +49,13 @@
   played: black
   rated: true
   rating: 1221
-  result: loss
-  time_class: blitz
+  result: Loss
+  start_time: null
+  time_class: Blitz
   time_control: 300+5
-  timestamp: null
   url: https://www.chess.com/game/live/4166327367
-- info: checkmated
+- end_time: null
+  info: checkmated
   opening: Kings-Pawn-Opening-Kings-Knight-Variation
   opening_url: https://www.chess.com/openings/Kings-Pawn-Opening-Kings-Knight-Variation
   opponent: apsherwin
@@ -58,12 +63,13 @@
   played: black
   rated: true
   rating: 993
-  result: loss
-  time_class: blitz
+  result: Loss
+  start_time: null
+  time_class: Blitz
   time_control: '300'
-  timestamp: null
   url: https://www.chess.com/game/live/3474056049
-- info: checkmated
+- end_time: null
+  info: checkmated
   opening: Queens-Pawn-Opening-Zukertort-Variation
   opening_url: https://www.chess.com/openings/Queens-Pawn-Opening-Zukertort-Variation
   opponent: 23ji4fi4fc0iqr9v34j2gvw
@@ -71,12 +77,13 @@
   played: black
   rated: true
   rating: 1345
-  result: win
-  time_class: rapid
+  result: Win
+  start_time: null
+  time_class: Rapid
   time_control: '600'
-  timestamp: null
   url: https://www.chess.com/game/live/9249910513
-- info: resigned
+- end_time: null
+  info: resigned
   opening: Petrovs-Defense-Three-Knights-Game
   opening_url: https://www.chess.com/openings/Petrovs-Defense-Three-Knights-Game
   opponent: dhirendrashukla
@@ -84,12 +91,13 @@
   played: white
   rated: true
   rating: 1271
-  result: loss
-  time_class: blitz
+  result: Loss
+  start_time: null
+  time_class: Blitz
   time_control: 300+5
-  timestamp: null
   url: https://www.chess.com/game/live/4039785949
-- info: resigned
+- end_time: null
+  info: resigned
   opening: Sicilian-Defense-Chekhover-Variation-4...Nc6-5.Bb5
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Chekhover-Variation-4...Nc6-5.Bb5
   opponent: Zjlmonkey
@@ -97,12 +105,13 @@
   played: white
   rated: true
   rating: 1235
-  result: loss
-  time_class: blitz
+  result: Loss
+  start_time: null
+  time_class: Blitz
   time_control: 300+5
-  timestamp: null
   url: https://www.chess.com/game/live/4701121112
-- info: resigned
+- end_time: null
+  info: resigned
   opening: Sicilian-Defense-Bowdler-Attack
   opening_url: https://www.chess.com/openings/Sicilian-Defense-Bowdler-Attack
   opponent: a1travel
@@ -110,12 +119,13 @@
   played: white
   rated: true
   rating: 1245
-  result: loss
-  time_class: blitz
+  result: Loss
+  start_time: null
+  time_class: Blitz
   time_control: 300+5
-  timestamp: null
   url: https://www.chess.com/game/live/4400540392
-- info: resigned
+- end_time: null
+  info: resigned
   opening: French-Defense-Knight-Variation
   opening_url: https://www.chess.com/openings/French-Defense-Knight-Variation
   opponent: beingpratik
@@ -123,8 +133,8 @@
   played: black
   rated: true
   rating: 1340
-  result: loss
-  time_class: rapid
+  result: Loss
+  start_time: null
+  time_class: Rapid
   time_control: '600'
-  timestamp: null
   url: https://www.chess.com/game/live/43663599179
