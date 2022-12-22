@@ -1,12 +1,16 @@
-import pandas as pd
-from datetime import datetime
-import chess.pgn
 import io
+import typing
+from datetime import datetime
 
+import pandas as pd
+import chess.pgn
 
 class GameProcessor:
     def __init__(self, username):
         self.username = username
+
+    def extract_pgn_data(self, row: pd.DataFrame):
+        return chess.pgn.read_game(io.StringIO(row["pgn"]))
 
     def get_opponent(self, white: dict, black: dict) -> dict:
         """Determines the stats of the opponent"""
@@ -54,34 +58,41 @@ class GameProcessor:
         if result == info:
             return ("Draw", info)
 
-    def get_opening(self, pgn: str) -> str:
+    def get_opening(self, row: pd.DataFrame) -> str:
         """Extracts the opening from the PGN
         the opeinig is extracted from the ECOUrl, which has the form like:
         "https://www.chess.com/openings/Vienna-Game-Zhuravlev-Countergambit"
 
         In this case, the opeining "Vienna-Game-Zhuravlev-Countergambit"
         """
-        pgn = chess.pgn.read_game(io.StringIO(pgn))
-
+        
         try:
-            opening = pgn.headers["ECOUrl"]
+            opening = self.extract_pgn_data(row).headers["ECOUrl"]
         except KeyError as e:
             opening = None
 
         return opening
 
-    def get_timestamps(self, row: pd.DataFrame) -> tuple:
+    def get_timestamps(self, row: pd.DataFrame) -> typing.Tuple[datetime, datetime, int]:
+
+        pgn = self.extract_pgn_data(row)
+        dt_form = "%Y.%m.%d%H:%M:%S"
         try:
-            start_time = datetime.fromtimestamp(row["start_time"])
-        except TypeError:
-            start_time = None
+            s_timestamp = datetime.strptime(pgn.headers["UTCDate"]+pgn.headers["StartTime"], dt_form)
+
+        except KeyError as e:
+            s_timestamp = None
 
         try:
-            end_time = datetime.fromtimestamp(row["end_time"])
-        except TypeError:
-            end_time = None
+            e_timestamp = datetime.strptime(pgn.headers["EndDate"]+pgn.headers["EndTime"], dt_form)
 
-        return start_time, end_time
+            duration = e_timestamp - s_timestamp
+            duration = duration.seconds
+        except KeyError as e:
+            e_timestamp = None
+            duration = None
+
+        return s_timestamp, e_timestamp, duration
 
     def get_time_class(self, row: pd.DataFrame) -> str:
         if row["rules"] == "chess":
@@ -99,10 +110,11 @@ class GameProcessor:
 
         for _, row in data.iterrows():
 
-            start_time, end_time = self.get_timestamps(row)
+            start_time, end_time, duration = self.get_timestamps(row)
+
             game_data = self.get_opponent(row["white"], row["black"])
             result, info = self.get_result(game_data["result"], game_data["info"])
-            opening_url = self.get_opening(row["pgn"])
+            opening_url = self.get_opening(row)
 
             output.append(
                 {
@@ -112,6 +124,7 @@ class GameProcessor:
                     "time_control": row["time_control"],
                     "start_time": start_time,
                     "end_time": end_time,
+                    "duration": duration,
                     "played": game_data["played"],
                     "rating": game_data["rating"],
                     "opponent": game_data["opponent"],
@@ -126,3 +139,4 @@ class GameProcessor:
         print("Done!")
 
         return pd.DataFrame(output)
+

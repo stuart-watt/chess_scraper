@@ -8,5 +8,3 @@ def main(event: dict = None, context: dict = None):
         os.environ["USERNAME"],
         "gs://" + os.environ["DATALAKE_BUCKET"] + "/games/games.csv",
     )
-
-
