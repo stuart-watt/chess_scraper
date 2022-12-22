@@ -22,6 +22,7 @@ def test_game_processor_by_regression(
 
     data_regression.check(outputs)
 
+
 def test_ratings_by_regression(
     real_username: str,
     testdata: pathlib.Path,
