@@ -7,10 +7,22 @@ on:
 jobs:
   Format:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+
     steps:
       - run: echo "This action will format the repo."
       - name: Check out repository code
         uses: actions/checkout@v3
+      - name: Setup conda env
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: chess
+          environment-file: environment_basic.yaml
+      - run: conda info
+      - run: conda list
+      - run: conda config --show
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
   Deploy-and-trigger:
