@@ -16,7 +16,7 @@ jobs:
   Deploy-and-trigger:
     runs-on: ubuntu-latest
 
-    needs: changes
+    needs: Format
 
     steps:
       - run: echo "This action will deploy terraform and trigger chess ingestion."
