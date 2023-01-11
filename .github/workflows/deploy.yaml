@@ -30,25 +30,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automated Change from ${{ github.event_name }} to ${{ github.ref }}
-
-
-  Deploy-and-trigger:
-    runs-on: ubuntu-latest
-
-    # needs: Format
-
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-
-      - name: Setup conda env
-        uses: conda-incubator/setup-miniconda@v2
-        with:
-          activate-environment: chess
-          environment-file: environment.yaml
-
-      - name: Setup terraform
-        uses: hashicorp/setup-terraform@v1
-        with:
-          terraform_version: 1.1.9
       
