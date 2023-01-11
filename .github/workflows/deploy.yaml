@@ -22,7 +22,11 @@ jobs:
           environment-file: environment_basic.yaml
       - name: Format code
         run: make format
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Commit Formatted code
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automated Change from ${{ job }}
+
 
   Deploy-and-trigger:
     runs-on: ubuntu-latest
