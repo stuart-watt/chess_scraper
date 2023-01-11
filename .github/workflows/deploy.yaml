@@ -1,9 +1,11 @@
 name: Deployment
-run-name: Deployment triggred by ${{ github.event_name }} from ${{ github.actor }}
+run-name: Deployment triggered by ${{ github.event_name }} from ${{ github.actor }}
+
 on:
   push:
     branches: 
       - "master"
+
 jobs:
   Format:
     runs-on: ubuntu-latest
@@ -14,13 +16,16 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+
       - name: Setup conda env
         uses: conda-incubator/setup-miniconda@v2
         with:
           activate-environment: chess
           environment-file: environment_basic.yaml
+
       - name: Format code
         run: make format
+
       - name: Commit actions changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
@@ -30,16 +35,20 @@ jobs:
   Deploy-and-trigger:
     runs-on: ubuntu-latest
 
-    needs: Format
+    # needs: Format
 
     steps:
-      - run: echo "This action will deploy terraform and trigger chess ingestion."
       - name: Check out repository code
         uses: actions/checkout@v3
-      # - name: Setup conda env
-      #   uses: conda-incubator/setup-miniconda@v2
-      #   with:
-      #     activate-environment: chess
-      #     environment-file: environment.yaml
+
+      - name: Setup conda env
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: chess
+          environment-file: environment.yaml
+
+      - name: Setup terraform
+        uses: hashicorp/setup-terraform@v1
+          with:
+            terraform_version: 1.1.9
       
-      - run: echo "🍏 This job's status is ${{ job.status }}."
