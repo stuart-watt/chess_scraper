@@ -10,6 +10,7 @@ setup(
     name="chess_scraper",
     description=DESCRIPTION,
     packages=find_packages(),
+    
     python_requires=">=3.6",
     install_requires=requires,
     include_package_data=True,
