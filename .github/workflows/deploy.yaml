@@ -12,7 +12,6 @@ jobs:
         shell: bash -l {0}
 
     steps:
-      - run: echo "This action will format the repo."
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: Setup conda env
@@ -25,7 +24,7 @@ jobs:
       - name: Commit actions changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automated Change from ${{ job }}
+          commit_message: Automated Change from ${{ github.event_name }} to ${{ github.ref }}
 
 
   Deploy-and-trigger:
