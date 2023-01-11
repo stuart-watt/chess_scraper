@@ -1,5 +1,5 @@
-name: Deployment
-run-name: Deployment triggered by ${{ github.event_name }} from ${{ github.actor }}
+name: CI
+run-name: CI triggered by ${{ github.event_name }} from ${{ github.actor }}
 
 on:
   push:
