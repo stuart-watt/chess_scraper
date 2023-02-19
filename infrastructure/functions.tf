@@ -30,14 +30,13 @@ resource "google_cloudfunctions_function" "chess_scraper" {
 
   event_trigger {
     event_type = "google.pubsub.topic.publish"
-    resource   = google_pubsub_topic.daily.id
+    resource   = google_pubsub_topic.scraper.id
     failure_policy {
       retry = false
     }
   }
 
   environment_variables = {
-    USERNAME        = "samwise_gambit"
     DATALAKE_BUCKET = google_storage_bucket.datalake.name
   }
 

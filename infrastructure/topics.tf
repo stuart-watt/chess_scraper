@@ -14,3 +14,7 @@ resource "google_cloud_scheduler_job" "daily" {
     }
   }
 }
+
+resource "google_pubsub_topic" "scraper" {
+  name = "scraper"
+}
