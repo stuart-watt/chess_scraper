@@ -1,0 +1,9 @@
+name: chess
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  - python==3.9.*
+  - pip
+  - pip:
+    - black==22.10.0
