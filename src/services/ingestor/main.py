@@ -13,6 +13,8 @@ def main(event: dict = None, context: dict = None):
 
     username = event.get("username", None)
 
+    print(f"Ingesting data for {username}")
+
     if username is not None:
 
         scraper.get_data(
