@@ -1,5 +1,4 @@
 import os
-import click
 import json
 from base64 import b64decode
 from scraper import scraper
@@ -20,14 +19,3 @@ def main(event: dict = None, context: dict = None):
             "gs://" + os.environ["DATALAKE_BUCKET"],
         )
 
-#################
-## CLI command ##
-#################
-
-@click.command()
-@click.option("--event")
-def cli_main(event: str):
-    main(event=json.loads(event))
-
-if __name__ == "__main__":
-    cli_main()
