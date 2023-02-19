@@ -4,6 +4,7 @@ import json
 
 # CLI command to add a username to the GCS registry
 
+
 @click.command()
 @click.argument("username")
 @click.argument("dst")
@@ -12,7 +13,6 @@ def add_username_to_registry(username: str, dst: str):
     path = GSPath(dst)
     entry = json.dumps({"username": username})
 
-    
     users = path.read_text() if path.exists() else ""
 
     if entry in users.split("\n"):

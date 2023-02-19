@@ -3,6 +3,7 @@ import json
 from base64 import b64decode
 from scraper import scraper
 
+
 def main(event: dict = None, context: dict = None):
 
     if set(event.keys()) == {"username"}:  # Invoked manually.
@@ -18,4 +19,3 @@ def main(event: dict = None, context: dict = None):
             username,
             "gs://" + os.environ["DATALAKE_BUCKET"],
         )
-
