@@ -13,10 +13,10 @@ def get_data(username: str, file_path: str):
     processor = GameProcessor(username)
     games = processor.clean_archive(data)
 
-    games.to_csv(file_path + "games.csv", index=False)
+    games.to_csv(file_path + f"/games/{username}.csv", index=False)
 
     ratings = processor.calculate_ratings(games)
-    ratings.to_csv(file_path + "ratings.csv", index=False)
+    ratings.to_csv(file_path + f"/ratings/{username}.csv", index=False)
 
     return
 

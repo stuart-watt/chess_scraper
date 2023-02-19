@@ -1,11 +1,10 @@
 ###########################
 ## Environment variables ##
 ###########################
+include .env
 
 export ALIAS = chess 		# must match name field in environment.yaml
 
-
-export $(cat .env)
 export TF_VAR_project_id = $(PROJECT_ID)
 export TF_VAR_region = $(PROJECT_REGION)
 
@@ -49,9 +48,18 @@ format:
 	black .
 
 
-###############
-## Terraform ##
-###############
+################
+## Deployment ##
+################
+
+build:
+	sh scripts/add_scraper_to_gcf.sh src/scraper src/services/ingestor
+
+clean:
+	rm src/services/ingestor/*.whl
+	rm src/services/ingestor/*.txt
 
 terraform:
 	cd infrastructure && terraform init && terraform apply -auto-approve
+
+deploy: build terraform clean
