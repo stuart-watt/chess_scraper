@@ -1,7 +1,7 @@
 import click
 import json
 
-from gcf import main
+from main import main
 
 @click.command()
 @click.option("--event")

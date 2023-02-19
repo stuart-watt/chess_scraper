@@ -1,6 +1,6 @@
 data "archive_file" "source" {
     type        = "zip"
-    source_dir  = "../src/scraper"
+    source_dir  = "../src/services/ingestor"
     output_path = "/tmp/scraper.zip"
 }
 
