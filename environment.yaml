@@ -34,3 +34,4 @@ dependencies:
     - black==22.10.0
 
     - gcsfs
+    - cloudpathlib
