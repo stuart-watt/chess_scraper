@@ -63,5 +63,3 @@ terraform:
 	cd infrastructure && terraform init && terraform apply -auto-approve
 
 deploy: build terraform clean
-
-all: build terraform
