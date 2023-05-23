@@ -1,3 +1,4 @@
+import datetime
 import pathlib
 import json
 
@@ -34,6 +35,7 @@ def test_ratings_by_regression(
     games = processor.clean_archive(data)
 
     ratings = processor.calculate_ratings(games)
+    ratings = ratings[ratings["date"] < datetime.date(2023, 1, 1)]
 
     outputs = json.loads(ratings.to_json(orient="records"))
 

@@ -20,8 +20,6 @@ dependencies:
 
     # Visualisation
     - matplotlib
-    - seaborn
-    - plotly
 
     # Testing
     - pytest==6.2.*
