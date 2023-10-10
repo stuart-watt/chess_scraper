@@ -5,11 +5,19 @@ import pandas as pd
 
 class ChessClient:
     def __init__(self, username: str):
+        self.header = {
+            "user-agent": "Chess Analytics Application",
+        }
         self.check_user(username)
 
     def check_user(self, username: str):
 
-        r = requests.get(f"https://api.chess.com/pub/player/{username}")
+        r = requests.get(
+            url=f"https://api.chess.com/pub/player/{username}",
+            headers=self.header,
+            timeout=10,
+        )
+
         response = r.json()
 
         if r.status_code == 200:
@@ -21,7 +29,9 @@ class ChessClient:
     def list_archives(self) -> list:
 
         r = requests.get(
-            f"https://api.chess.com/pub/player/{self.username}/games/archives"
+            f"https://api.chess.com/pub/player/{self.username}/games/archives",
+            headers=self.header,
+            timeout=10,
         )
         r = r.json()
 
@@ -30,7 +40,7 @@ class ChessClient:
         return r["archives"]
 
     def get_archive(self, url: str) -> typing.List[dict]:
-        r = requests.get(url)
+        r = requests.get(url, headers=self.header, timeout=10)
         return r.json()["games"]
 
     def get_archive_data(self) -> pd.DataFrame:
