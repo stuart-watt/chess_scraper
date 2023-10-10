@@ -187,7 +187,7 @@ class GameProcessor:
             ratings, how="left", on=["date", "time_class"]
         )
 
-        ratings["rating"] = ratings.groupby("time_class").fillna(method="ffill")[
+        ratings["rating"] = ratings.groupby("time_class").ffill()[
             "rating"
         ]
 
